@@ -3,13 +3,21 @@
 	height: 3em;
 }
 
-.radio-field p {
-	font-size: 1em;
+.gender {
+	display: inline;
+	margin-right: 1em;
+}
+.gender > label {
+	vertical-align: middle;
 }
 
 .radio-field {
 	text-align: start;
 	margin: 20px 1.3em;
+}
+
+.radio-field p {
+	font-size: 1em;
 }
 
 .select-field {
@@ -36,11 +44,11 @@ input[type='radio'] {
 	height: 1em;
 	border: 0.1em solid #38abab;
 	border-radius: 50%;
+	vertical-align: middle;
 }
 
 input[type='radio']:checked {
 	appearance: auto;
-	accent-color: #38abab;
 	border: none;
 	outline: none;
 }

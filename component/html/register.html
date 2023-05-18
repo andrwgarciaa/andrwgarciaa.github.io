@@ -22,13 +22,16 @@
 				<li class="nav-item" id="products">
 					<a>Products</a>
 					<ul class="nav-products hidden">
-						<li class="nav-products-hover">
-							<a href="./healthcare.html">Healthcare</a>
-						</li>
-						<li class="nav-products-hover disabled">
-							<a href="www.google.com" aria-disabled="true"
-								>Cosmetic</a
+						<li class="nav-products-hover" id="healthcare">
+							<a href="./component/html/healthcare.html"
+								>Healthcare</a
 							>
+						</li>
+						<li
+							class="nav-products-hover disabled"
+							aria-disabled="true"
+						>
+							<a href="#">Cosmetic</a>
 						</li>
 						<li
 							class="nav-products-hover disabled"
@@ -57,20 +60,24 @@
 					</div>
 					<div class="radio-field">
 						<p>Gender</p>
-						<input
-							type="radio"
-							name="gender"
-							id="genmale"
-							required
-						/>
-						<label for="genmale">Male</label>
-						<input
-							type="radio"
-							name="gender"
-							id="genfemale"
-							required
-						/>
-						<label for="genfemale">Female</label>
+						<div class="gender">
+							<input
+								type="radio"
+								name="gender"
+								id="genmale"
+								required
+							/>
+							<label for="genmale">Male</label>
+						</div>
+						<div class="gender">
+							<input
+								type="radio"
+								name="gender"
+								id="genfemale"
+								required
+							/>
+							<label for="genfemale">Female</label>
+						</div>
 					</div>
 					<div class="select-field">
 						<label for="regiscity">City<br /><br /></label>
