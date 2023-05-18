@@ -1,5 +1,5 @@
 main {
-	margin: 8vh 12vw;
+	margin: 5vh 12vw;
 }
 
 .about {
@@ -16,9 +16,13 @@ main {
 	font-size: 2.5rem;
 }
 
+.contact h2 {
+	margin-top: 2em;
+}
+
 @media only screen and (min-width: 1000px) {
 	main {
-		margin: 3vh 15vw;
+		margin: 2vh 15vw;
 	}
 
 	.about h1 {
@@ -29,10 +33,6 @@ main {
 	.about p {
 		font-size: 1.25rem;
 		font-weight: 300;
-	}
-
-	br {
-		display: none;
 	}
 
 	.contact h2 {
