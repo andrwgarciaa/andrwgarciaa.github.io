@@ -71,12 +71,13 @@ a {
 	display: flex;
 	flex-direction: column;
 	width: 100vw;
+	height: 78vh;
 }
 
 .welcome-message img {
 	object-fit: cover;
 	width: 100vw;
-	height: 80vh;
+	height: 78vh !important;
 	opacity: 0.4;
 }
 
