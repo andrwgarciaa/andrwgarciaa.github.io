@@ -1,97 +1,94 @@
 body {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  overflow: hidden;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	overflow: hidden;
+}
+
+#center {
+	display: flex;
+	width: 100vw;
+	height: 90vh;
+	justify-content: center;
+	align-items: center;
 }
 
 .keyboard {
-  height: calc(100% + 500px);
+	height: calc(100% + 500px);
 }
 
 .login-form {
-  position: absolute;
-  text-align: center;
-  font-size: 0.8rem;
-  z-index: 0;
-  top: 50%;
-  left: 50%;
-  width: calc(0.2vw * 400);
-  transform: translate(-50%, -50%);
-  box-shadow: 0 2px 4px 2px gray;
+  padding: 1em;
+	text-align: center;
+	font-size: 0.8rem;
+	z-index: 0;
+	width: calc(0.2vw * 400);
+	box-shadow: 0 2px 4px 2px gray;
 }
 
 .login-form h1 {
-  text-align: center;
-  font-weight: 400;
+	text-align: center;
+	font-weight: 400;
 }
 
 .text-field {
-  position: relative;
-  border-bottom: 2px solid gray;
-  margin: 30px 1em;
-  height: 40px;
-  font-size: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	position: relative;
+	border-bottom: 2px solid gray;
+	font-size: 1em;
+  height: 3em;
+  margin: 3em 0;
 }
 
 .text-field input {
-  width: 100%;
-  height: 55px;
-  font-size: 16px;
-  padding: 0 5px;
-  border: none;
-  background: none;
-  outline: none;
+	width: 100%;
+	font-size: 16px;
+	border: none;
+	background: none;
+	outline: none;
 }
 
 .text-field label {
-  position: absolute;
-  top: 70%;
-  left: 5px;
-  color: black;
-  transform: translateY(-50%);
-  transition: 0.3s ease;
+	color: black;
 }
 
-.text-field input:focus ~ label,
-.text-field input:valid ~ label {
-  top: -1px;
-  color: #38abab;
-}
-
-input[type="submit"] {
-  color: #38abab;
-  background-color: white;
-  box-shadow: 0 0 1px 1px gainsboro;
-  border-radius: 2.5px;
-  width: 40%;
-  padding: 0.5em;
-  border: none;
+input[type='submit'] {
+	color: #38abab;
+	background-color: white;
+	box-shadow: 0 0 1px 1px gainsboro;
+	border-radius: 2.5px;
+	width: 40%;
+	padding: 0.5em;
+	margin: 2em;
+	border: none;
 }
 
 .login-form p {
-  font-size: 0.65rem;
+	font-size: 0.65rem;
 }
 
 .login-form a {
-  color: #38abab;
-  text-decoration: underline;
+	color: #38abab;
+	text-decoration: underline;
 }
 
 footer {
-  position: relative;
-  top: calc(0.7 * 100vh);
-  margin: 3em;
+	position: relative;
+	top: calc(0.7 * 100vh);
+	margin: 3em;
 }
 
 @media only screen and (min-width: 600px) {
-  .login-form {
-    width: 40vw;
-    padding: 8em 5em;
-  }
+	.login-form {
+		width: 30vw;
+		padding: 3em;
+	}
 
-  input[type="button"] {
-    padding: 1em;
-  }
+	.text-field {
+		height: 3em;
+	}
 }
