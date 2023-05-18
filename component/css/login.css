@@ -19,7 +19,7 @@ body {
 }
 
 .login-form {
-  padding: 1em;
+	padding: 1em;
 	text-align: center;
 	font-size: 0.8rem;
 	z-index: 0;
@@ -40,8 +40,8 @@ body {
 	position: relative;
 	border-bottom: 2px solid gray;
 	font-size: 1em;
-  height: 3em;
-  margin: 3em 0;
+	height: 3em;
+	margin: 3em 0;
 }
 
 .text-field input {
