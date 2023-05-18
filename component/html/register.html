@@ -46,25 +46,35 @@
 		<div id="center">
 			<div class="login-form">
 				<h1>Register</h1>
-				<form action="./healthcare.html" onsubmit="return regisCheck()">
+				<form action="./healthcare.html">
 					<div class="text-field">
 						<label for="regisname">Full Name</label>
 						<input type="text" id="regisname" required /><br />
 					</div>
 					<div class="text-field">
 						<label for="regisemail">Email</label>
-						<input type="text" id="regisemail" required /><br />
+						<input type="email" id="regisemail" required /><br />
 					</div>
 					<div class="radio-field">
 						<p>Gender</p>
-						<input type="radio" name="gender" id="genmale" />
+						<input
+							type="radio"
+							name="gender"
+							id="genmale"
+							required
+						/>
 						<label for="genmale">Male</label>
-						<input type="radio" name="gender" id="genfemale" />
+						<input
+							type="radio"
+							name="gender"
+							id="genfemale"
+							required
+						/>
 						<label for="genfemale">Female</label>
 					</div>
 					<div class="select-field">
 						<label for="regiscity">City<br /><br /></label>
-						<select id="regiscity" name="city">
+						<select id="regiscity" name="city" required>
 							<option>Select city...</option>
 							<option>Jakarta</option>
 							<option>Tangerang</option>
@@ -78,6 +88,7 @@
 						<input
 							type="password"
 							id="regispassword"
+							minlength="8"
 							required
 						/><br />
 					</div>
@@ -86,6 +97,7 @@
 						<input
 							type="password"
 							id="regispassword2"
+							minlength="8"
 							required
 						/><br />
 					</div>
@@ -111,6 +123,5 @@
 			<p>Copyright ©2022 Andrew Garcia. All Rights Reserved</p>
 		</footer>
 		<script src="../js/home.js"></script>
-		<script src="../js/form.js"></script>
 	</body>
 </html>
